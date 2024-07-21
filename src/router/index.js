@@ -10,6 +10,7 @@ import { createRouter, createWebHistory } from 'vue-router/auto'
 import { routes } from 'vue-router/auto-routes'
 import ScanContent from '@/components/scanner/ScanContent.vue'
 import ScanFileUpload from '@/components/scanner/ScanFileUpload.vue'
+import ScanUrlContent from '@/components/scanner/ScanUrlContent.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -17,7 +18,8 @@ const router = createRouter({
     //NESTED ROUTE
     { path: '/scan', component: ScanContent,
       children: [
-        {path: 'file', component: ScanFileUpload}
+        { path: 'file', component: ScanFileUpload},
+        { path: 'url', component: ScanUrlContent}
       ]
      },
   ]

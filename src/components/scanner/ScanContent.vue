@@ -53,8 +53,6 @@
                 <!--NO CONTENT ITS JUST A BLANK-->
             </v-col>
 
-
-
         </v-row>
       
       </v-row>

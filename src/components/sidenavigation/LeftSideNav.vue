@@ -3,13 +3,17 @@
     <v-list-item class="pa-4" title="APP"></v-list-item>
     <v-divider></v-divider>
       <router-link v-for="item in menuItems" :key="item.to" :to="item.to" class="text-decoration-none on-surface" rel="noopener noreferrer">
-        <v-list-item :prepend-icon="item.icon" link  >
-
+        <v-list-item :prepend-icon="item.icon" link>
+          
           <!--link :title="item.title" (Inside v-lis-tem loop)-->
         </v-list-item>
       </router-link>
 
 </template>
+
+
+
+
 
 <script>
 export default {

@@ -10,7 +10,7 @@
       >
    
         <v-btn>
-          <router-link to="/scan/file">
+          <router-link to="/scan/url">
           <v-icon>mdi-fingerprint</v-icon>
           URL
         </router-link>
