@@ -14,8 +14,12 @@ import ScanFileUpload from '@/components/scanner/ScanFileUpload.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
-    { path: '/Scan', component: ScanContent },
-    { path: '/FileScan', component: ScanFileUpload },
+    //NESTED ROUTE
+    { path: '/scan', component: ScanContent,
+      children: [
+        {path: 'file', component: ScanFileUpload}
+      ]
+     },
   ]
 })
 

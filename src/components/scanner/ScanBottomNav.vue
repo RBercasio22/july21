@@ -8,28 +8,49 @@
         grow
 
       >
+   
         <v-btn>
+          <router-link to="/scan/file">
           <v-icon>mdi-fingerprint</v-icon>
           URL
-        
+        </router-link>
         </v-btn>
+    
         <v-btn>
-          <v-icon>mdi-file-code</v-icon>
+          <router-link to="/scan/file">
+          <v-icon>mdi-file-code</v-icon> 
           FILE
+          </router-link>
         </v-btn>
-  
+     
         <v-btn>
+          <router-link to="/scan/file">
           <v-icon>mdi-magnify</v-icon>
           SEARCH
+        </router-link>
         </v-btn>
-
+   
    
       </v-bottom-navigation>
     </v-layout>
-  </template>
-  <script>
+</template>
+
+<style scoped>
+
+a {
+  color: white;
+  text-decoration: none;
+
+}
+
+
+</style>
+
+<script>
+import ScanContent from './ScanContent.vue';
+
     export default {
       data: () => ({ value: 1 }),
    
     }
-  </script>
+</script>

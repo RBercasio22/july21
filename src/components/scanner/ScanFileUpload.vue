@@ -1,5 +1,11 @@
 <template>
+
+    
     <div>
+      <!-- File input Icon -->
+      <div class="icon">
+        <h1><v-icon size="150">mdi-file-code</v-icon></h1>
+      </div>
       <!-- File input button -->
       <v-btn @click="triggerFileInput" color="blue" variant="outlined" >
         Choose File
@@ -39,6 +45,7 @@
         </span>
       </div>
     </div>
+    
   </template>
   
   <script>
@@ -69,5 +76,10 @@
     flex-wrap: wrap;
     gap: 8px;
   }
+
+  .icon {
+    margin-bottom: 20px;
+  }
+
   </style>
   

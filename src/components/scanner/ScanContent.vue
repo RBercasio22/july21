@@ -37,8 +37,6 @@
                 <!--set background rgb(33,33,33)-->
                 <!--NO CONTENT ITS JUST A BLANK-->
             </v-col>
-
-
             <!--INSERT ANOTHER FUNCTION AND IMPLEMENT ROUTING-->
               <!--INSERT A SCANBOTTOMNAVIGATION MENU-->
               <v-col cols="2" style="background-color: rgb(33,33,33)">
@@ -47,7 +45,7 @@
             </v-col>
             <v-col cols="8">
                 <v-sheet class="text-center pa-2">
-                  
+                  <router-view></router-view>
                 </v-sheet>
             </v-col>
             <v-col cols="2" style="background-color: rgb(33,33,33)">
