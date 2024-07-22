@@ -8,23 +8,39 @@
 // Composables
 import { createRouter, createWebHistory } from 'vue-router/auto'
 import { routes } from 'vue-router/auto-routes'
+import { components } from 'vuetify/dist/vuetify-labs.js'
 import ScanContent from '@/components/scanner/ScanContent.vue'
 import ScanFileUpload from '@/components/scanner/ScanFileUpload.vue'
 import ScanUrlContent from '@/components/scanner/ScanUrlContent.vue'
 import ScanSearch from '@/components/scanner/ScanSearch.vue'
+import Home from '@/components/menuitems/Home.vue'
+import Card from '@/components/menuitems/Card.vue'
+import Logout from '@/components/menuitems/Logout.vue'
+import Post from '@/components/menuitems/Post.vue'
+
+
+
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
+    
+
+    { path: '/', component: Home},
     //NESTED ROUTE
+    //PARENT CLASS
     { path: '/scan', component: ScanContent,
+      //CHILD CLASS
       children: [
         { path: 'file', component: ScanFileUpload},
         { path: 'url', component: ScanUrlContent},
         { path: 'search', component: ScanSearch},
-
       ]
      },
+     { path: '/card', component: Card},
+     { path: '/post', component: Post},
+     { path: '/logout', component: Logout},
+  
   ]
 })
 

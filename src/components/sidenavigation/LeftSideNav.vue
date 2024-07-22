@@ -22,10 +22,10 @@ export default {
       menuItems: [
         //FOR PAGE ONLY
         { to: '/', icon: 'mdi-home', size: '10'},
-        { to: '/Scan', icon: 'mdi-shield-bug'},
-        { to: '/Card', icon: 'mdi-card-text'},
-        { to: '/Post', icon: 'mdi-note-multiple-outline'},
-        { to: '/Logout', icon: 'mdi-logout'}
+        { to: '/scan', icon: 'mdi-shield-bug'},
+        { to: '/card', icon: 'mdi-card-text'},
+        { to: '/post', icon: 'mdi-note-multiple-outline'},
+        { to: '/logout', icon: 'mdi-logout'}
 
         //ERROR
         //{to:'/Quit', icon: 'mdi-Logout', title:'none'}
