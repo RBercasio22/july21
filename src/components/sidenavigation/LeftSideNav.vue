@@ -12,9 +12,6 @@
 </template>
 
 
-
-
-
 <script>
 export default {
   data() {
@@ -26,6 +23,7 @@ export default {
         { to: '/card', icon: 'mdi-card-text'},
         { to: '/post', icon: 'mdi-note-multiple-outline'},
         { to: '/logout', icon: 'mdi-logout'}
+
 
         //ERROR
         //{to:'/Quit', icon: 'mdi-Logout', title:'none'}
