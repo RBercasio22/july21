@@ -11,3 +11,11 @@
        
     </v-responsive>
 </template>
+
+
+<script>
+
+
+
+
+</script>

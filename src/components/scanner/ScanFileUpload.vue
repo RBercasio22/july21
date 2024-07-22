@@ -1,6 +1,4 @@
 <template>
-
-    
     <div>
       <!-- File input Icon -->
       <div class="icon">
@@ -18,7 +16,6 @@
         style="display: none"
         @change="handleFileChange"
       />
-
       <!-- Display selected files with delete option -->
       <div v-if="files.length" class="file-list">
         <v-chip
@@ -35,7 +32,7 @@
             class="ms-2"
             @click.stop="removeFile(index)"
             color="white"
-           
+        
           >
             mdi-close
           </v-icon>
@@ -70,6 +67,8 @@
   }
   </script>
   
+
+
   <style scoped>
   .file-list {
     display: flex;
