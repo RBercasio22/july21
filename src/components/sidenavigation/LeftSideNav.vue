@@ -21,8 +21,8 @@ export default {
     return {
       menuItems: [
         //FOR PAGE ONLY
-        { to: '/', icon: 'mdi-home'},
-        { to: '/Scan', icon: 'mdi-fingerprint'},
+        { to: '/', icon: 'mdi-home', size: '10'},
+        { to: '/Scan', icon: 'mdi-shield-bug'},
         { to: '/Card', icon: 'mdi-card-text'},
         { to: '/Post', icon: 'mdi-note-multiple-outline'},
         { to: '/Logout', icon: 'mdi-logout'}

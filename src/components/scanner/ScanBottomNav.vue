@@ -24,7 +24,7 @@
         </v-btn>
      
         <v-btn>
-          <router-link to="/scan/file">
+          <router-link to="/scan/search">
           <v-icon>mdi-magnify</v-icon>
           SEARCH
         </router-link>
